@@ -1,0 +1,61 @@
+#logoImage {
+  height: 80px;
+  width: 340px;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #logoImage {
+    height: 60px;
+    width: 220px;
+    margin-bottom: 1rem;
+  }
+}
+
+.jumbotron {
+  padding-top: 2rem;
+  background-color: #111010;
+  border-radius: 0 !important;
+  color: white;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+hr {
+  background-color: yellow;
+}
+
+.contributeOrVolunteer {
+  margin: 1rem;
+}
+
+#contribute {
+  border-radius: 25px;
+  background-color: orange;
+}
+
+.carousel-image {
+  height: 500px;
+}
+
+@media screen and (max-width: 450px) {
+  .carousel-image {
+    height: 250px;
+  }
+}
+
+#volunteer {
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(to right, orange, orange 50%, lightgray 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  transition: background-position 275ms ease;
+  background-position: 100%;
+}
+
+#volunteer:hover {
+  background-position: 0 100%;
+}

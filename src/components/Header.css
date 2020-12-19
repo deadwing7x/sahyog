@@ -1,0 +1,28 @@
+.nav-link, .navbar-brand {
+  background: linear-gradient(
+    to right,
+    orange,
+    orange 50%,
+    lightgray 50%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  transition: background-position 275ms ease;
+  background-position: 100%;
+}
+
+.nav-link:hover, .navbar-brand:hover {
+  background-position: 0 100%;
+}
+
+.navbar {
+    font-size: 24px;
+}
+
+.navbar-brand {
+    font-size: 28px;
+}
+
+
