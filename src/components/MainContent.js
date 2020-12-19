@@ -1,4 +1,5 @@
 import { Button, Jumbotron, Carousel } from "react-bootstrap";
+import GooglePayButton from "@google-pay/button-react";
 import "./MainContent.css";
 import logo from "../assets/logo.png";
 import carousel1 from "../assets/carousel-1.jpg";
@@ -7,6 +8,38 @@ import carousel3 from "../assets/carousel-3.jpg";
 import carousel4 from "../assets/carousel-4.jpg";
 
 const MainContent = () => {
+  const paymentRequest = {
+    apiVersion: 2,
+    apiVersionMinor: 0,
+    allowedPaymentMethods: [
+      {
+        type: "CARD",
+        parameters: {
+          allowedAuthMethods: ["PAN_ONLY", "CRYPTOGRAM_3DS"],
+          allowedCardNetworks: ["MASTERCARD", "VISA"],
+        },
+        tokenizationSpecification: {
+          type: "PAYMENT_GATEWAY",
+          parameters: {
+            gateway: "example",
+            gatewayMerchantId: "exampleGatewayMerchantId",
+          },
+        },
+      },
+    ],
+    merchantInfo: {
+      merchantId: "12345678901234567890",
+      merchantName: "Demo Merchant",
+    },
+    transactionInfo: {
+      totalPriceStatus: "FINAL",
+      totalPriceLabel: "Total",
+      totalPrice: "100.00",
+      currencyCode: "USD",
+      countryCode: "US",
+    },
+  };
+
   return (
     <div>
       <Jumbotron>
@@ -38,6 +71,13 @@ const MainContent = () => {
                 Volunteer
               </Button>
             </div>
+            <GooglePayButton
+              environment="TEST"
+              paymentRequest={paymentRequest}
+              onLoadPaymentData={() => {}}
+              buttonType="donate"
+              buttonColor="white"
+            />
           </div>
           <div className="col-md-8">
             <Carousel>

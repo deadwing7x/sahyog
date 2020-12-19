@@ -29,6 +29,10 @@ hr {
   margin: 1rem;
 }
 
+.google-pay-button-container {
+  margin-bottom: 1rem;
+}
+
 #contribute {
   border-radius: 25px;
   background-color: orange;
