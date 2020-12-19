@@ -1,11 +1,12 @@
-import { Navbar, Nav } from 'react-bootstrap';
+import { Navbar, Nav, Image } from 'react-bootstrap';
 import "./Header.css";
+import logo from "../assets/favicon.png";
 
 const Header = () => {
   return (
     <div>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <Navbar.Brand href="#home">Sahyog</Navbar.Brand>
+        <Navbar.Brand href="#home"><Image id="brand-logo" src={logo} roundedCircle></Image></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
