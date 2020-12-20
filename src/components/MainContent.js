@@ -2,10 +2,9 @@ import { Button, Jumbotron, Carousel } from "react-bootstrap";
 import GooglePayButton from "@google-pay/button-react";
 import "./MainContent.css";
 import logo from "../assets/logo.png";
-import carousel1 from "../assets/carousel-1.jpg";
-import carousel2 from "../assets/carousel-2.jpg";
-import carousel3 from "../assets/carousel-3.jpg";
-import carousel4 from "../assets/carousel-4.jpg";
+import carousel1 from "../assets/carousel-1.jpeg";
+import carousel2 from "../assets/carousel-2.jpeg";
+import carousel3 from "../assets/carousel-3.jpeg";
 
 const MainContent = () => {
   const paymentRequest = {
@@ -67,6 +66,9 @@ const MainContent = () => {
                 id="volunteer"
                 className="contributeOrVolunteer"
                 variant="link"
+                href="https://docs.google.com/forms/d/1g5IwbDYaHvB5xdlwzlj3N2b9mPt63zRPfvyh8R60pHI/edit?usp=sharing"
+                rel="noopener noreferrer"
+                target="_blank"
               >
                 Volunteer
               </Button>
@@ -100,13 +102,6 @@ const MainContent = () => {
                   className="d-block w-100 carousel-image"
                   src={carousel3}
                   alt="Third slide"
-                />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="d-block w-100 carousel-image"
-                  src={carousel4}
-                  alt="Fourth slide"
                 />
               </Carousel.Item>
             </Carousel>

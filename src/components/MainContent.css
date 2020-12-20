@@ -40,6 +40,10 @@ hr {
 
 .carousel-image {
   height: 500px;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
 @media screen and (max-width: 450px) {
@@ -62,4 +66,10 @@ hr {
 
 #volunteer:hover {
   background-position: 0 100%;
+}
+
+h2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 35px;
+  font-weight: 900;
 }
