@@ -1,9 +1,48 @@
 import { Jumbotron, Image, Form } from "react-bootstrap";
+import * as emailjs from "emailjs-com";
 import "./ContactUs.css";
 import logo from "../assets/favicon.png";
+import { useState } from "react";
 
 const ContactUs = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [select, setSelect] = useState("");
+  const [freeText, setFreeText] = useState("");
+
   const options = ["Contribute Money", "Donate Food/Clothes", "Volunteer"];
+
+  const resetForm = () => {
+    setName("");
+    setEmail("");
+    setSelect("");
+    setFreeText("");
+  };
+
+  const submitForm = (e) => {
+    e.preventDefault();
+
+    const serviceId = "service_l9aucym";
+    const templateId = "template_6fibgpn";
+    const userId = "user_cKKEeAQ94mur2gTuwRThv";
+
+    const templateParams = {
+      name: name,
+      email: email,
+      action: select.toLowerCase(),
+      message: freeText,
+    };
+
+    emailjs.send(serviceId, templateId, templateParams, userId).then(
+      (result) => {
+        console.log(result);
+        resetForm();
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+  };
 
   return (
     <div>
@@ -14,7 +53,8 @@ const ContactUs = () => {
           </div>
           <div className="col-md-3 contactUsDiv">
             <div className="contactInfo">
-              <i id="phone" className="fas fa-map-marker-alt fa-lg"></i> Asansol
+              <i id="phone" className="fas fa-map-marker-alt fa-lg"></i> Apcar
+              Garden, Asansol
             </div>
             <div className="contactInfo">
               <a className="phoneNumbers" href="tel:+918250785627">
@@ -41,12 +81,20 @@ const ContactUs = () => {
           </div>
           <div className="col-md-6 contactUsForm">
             <label id="formLabel">Keep in touch</label>
-            <Form>
+            <Form
+              onSubmit={(event) => {
+                submitForm(event);
+              }}
+            >
               <Form.Group controlId="exampleForm.ControlInput1">
                 <Form.Label className="labels">Name</Form.Label>
                 <Form.Control
                   className="inputForms"
                   required
+                  name="name"
+                  onChange={(event) => {
+                    setName(event.target.value);
+                  }}
                   type="text"
                   placeholder="Name"
                 />
@@ -56,7 +104,11 @@ const ContactUs = () => {
                 <Form.Control
                   className="inputForms"
                   required
+                  name="email"
                   type="email"
+                  onChange={(event) => {
+                    setEmail(event.target.value);
+                  }}
                   placeholder="name@example.com"
                 />
               </Form.Group>
@@ -64,7 +116,15 @@ const ContactUs = () => {
                 <Form.Label className="labels">
                   What do you want to do?
                 </Form.Label>
-                <Form.Control className="inputForms" required as="select">
+                <Form.Control
+                  name="select"
+                  className="inputForms"
+                  onChange={(event) => {
+                    setSelect(event.target.value);
+                  }}
+                  required
+                  as="select"
+                >
                   <option selected disabled>
                     Select an option
                   </option>
@@ -79,9 +139,17 @@ const ContactUs = () => {
               </Form.Group>
               <Form.Group controlId="exampleForm.ControlTextarea1">
                 <Form.Label className="labels">Message</Form.Label>
-                <Form.Control className="inputForms" as="textarea" rows={3} />
+                <Form.Control
+                  name="freeText"
+                  className="inputForms"
+                  onChange={(event) => {
+                    setFreeText(event.target.value);
+                  }}
+                  as="textarea"
+                  rows={3}
+                />
               </Form.Group>
-              <input id="submit-button" type="submit" />
+              <input id="submit-button" value="Submit" type="submit" />
             </Form>
           </div>
         </div>

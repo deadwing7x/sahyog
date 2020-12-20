@@ -7,8 +7,8 @@ const AboutUs = () => {
       <div className="row whoWeAre">
         <div className="col-md-3 whoWeAreDiv">
           <div className="whoWeAreText">
-            <div>Who we</div>
-            <div>are ?</div>
+            <div>Who are</div>
+            <div>we ?</div>
           </div>
         </div>
         <div className="col-md-9">
