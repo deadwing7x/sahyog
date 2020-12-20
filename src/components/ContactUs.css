@@ -58,6 +58,7 @@
 }
 
 #submit-button {
+  cursor: pointer;
   border-radius: 10px;
   width: 150px;
 }

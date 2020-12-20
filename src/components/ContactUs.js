@@ -7,7 +7,7 @@ import { useState } from "react";
 const ContactUs = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [select, setSelect] = useState("");
+  const [select, setSelect] = useState("Select an option");
   const [freeText, setFreeText] = useState("");
 
   const options = ["Contribute Money", "Donate Food/Clothes", "Volunteer"];
@@ -15,12 +15,16 @@ const ContactUs = () => {
   const resetForm = () => {
     setName("");
     setEmail("");
-    setSelect("");
+    setSelect("Select an option");
     setFreeText("");
   };
 
   const submitForm = (e) => {
     e.preventDefault();
+
+    const btn = document.getElementById("submit-button");
+
+    btn.value = "Sending Email...";
 
     const serviceId = "service_l9aucym";
     const templateId = "template_6fibgpn";
@@ -37,11 +41,16 @@ const ContactUs = () => {
       (result) => {
         console.log(result);
         resetForm();
+        alert("Email sent successfully!");
+        btn.value = "Submit";
       },
       (error) => {
+        btn.value = "Submit";
         console.log(error.text);
       }
     );
+
+    resetForm();
   };
 
   return (
@@ -92,6 +101,7 @@ const ContactUs = () => {
                   className="inputForms"
                   required
                   name="name"
+                  value={name}
                   onChange={(event) => {
                     setName(event.target.value);
                   }}
@@ -106,6 +116,7 @@ const ContactUs = () => {
                   required
                   name="email"
                   type="email"
+                  value={email}
                   onChange={(event) => {
                     setEmail(event.target.value);
                   }}
@@ -118,6 +129,7 @@ const ContactUs = () => {
                 </Form.Label>
                 <Form.Control
                   name="select"
+                  value={select}
                   className="inputForms"
                   onChange={(event) => {
                     setSelect(event.target.value);
@@ -141,6 +153,7 @@ const ContactUs = () => {
                 <Form.Label className="labels">Message</Form.Label>
                 <Form.Control
                   name="freeText"
+                  value={freeText}
                   className="inputForms"
                   onChange={(event) => {
                     setFreeText(event.target.value);
