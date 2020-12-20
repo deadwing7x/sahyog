@@ -3,9 +3,9 @@ import "./AboutUs.css";
 
 const AboutUs = () => {
   return (
-    <Jumbotron>
+    <Jumbotron id="aboutUs">
       <div className="row whoWeAre">
-        <div className="col-md-3">
+        <div className="col-md-3 whoWeAreDiv">
           <div className="whoWeAreText">
             <div>Who we</div>
             <div>are ?</div>

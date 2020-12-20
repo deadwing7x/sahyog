@@ -4,12 +4,8 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <div>
-      <Navbar id='footer' className="row col-md-12" bg="dark" variant="dark">
-        <div className="col-md-7 copyright">
-          <div>Copyright © 2020</div>
-          <div>Asansol Sahyog Welfare Organization</div>
-        </div>
-        <Navbar className="col-md-5" id="basic-navbar-nav">
+      <Navbar expand="lg" id="footer-quickLinks" bg="dark" variant="dark">
+        <Navbar>
           <Nav>
             <a
               className="footer-links"
@@ -36,6 +32,10 @@ const Footer = () => {
           </Nav>
         </Navbar>
       </Navbar>
+      <div className="copyright">
+        <div>Copyright © 2020 | Sahyog Welfare Organization</div>
+        <div>Designed with <i className="fas fa-heart"></i> by Anubhav</div>
+      </div>
     </div>
   );
 };

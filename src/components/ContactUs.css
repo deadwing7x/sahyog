@@ -1,0 +1,87 @@
+#contactUs {
+  background-color: inherit;
+  padding-bottom: 10px !important;
+}
+
+.row.col-md-12 {
+  background-color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+}
+
+#footer-logo {
+  height: 200px;
+  width: 200px;
+}
+
+.col-md-3.contactUs {
+  text-align: center;
+}
+
+.contactInfo {
+  margin-top: 1rem;
+  color: black;
+}
+
+.phoneNumbers,
+.phoneNumbers:hover {
+  text-decoration: none;
+  color: black;
+}
+
+#email {
+  position: relative;
+  top: 2px;
+}
+
+#phone {
+  padding-right: 7px;
+}
+
+.labels {
+  color: black;
+}
+
+#formLabel {
+  color: black;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.col-md-6.contactUsForm {
+  padding-bottom: 10px;
+  border: 2px solid black;
+  border-radius: 25px;
+}
+
+#submit-button {
+  border-radius: 10px;
+  width: 100px;
+}
+
+#submit-button:hover {
+  background-color: orange;
+}
+
+.inputForms {
+  border-radius: 15px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 400px) {
+  .col-md-6.contactUsForm {
+    margin-top: 2rem;
+    padding-bottom: 10px;
+    border: 2px solid black;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 450px) {
+  .col-md-6.contactUsForm {
+    margin-top: 2rem;
+    padding-bottom: 10px;
+    border: 2px solid black;
+  }
+}

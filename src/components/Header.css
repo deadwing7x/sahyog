@@ -9,9 +9,10 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 200% 100%;
-  transition: background-position 275ms ease;
+  transition: background-position 700ms ease;
   background-position: 100%;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: sans-serif;
+  font-weight: 800;
 }
 
 .nav-link:hover {
@@ -20,6 +21,7 @@
 
 .navbar {
     font-size: 24px;
+    background-color: inherit !important;
 }
 
 #brand-logo {

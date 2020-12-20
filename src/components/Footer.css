@@ -16,12 +16,22 @@
   background-position: 0 100%;
 }
 
-.col-md-7.copyright {
+.copyright {
   text-align: center;
   color: white;
+  background-color: inherit;
+  margin-bottom: 1.5rem;
 }
 
-#footer {
-  width: auto;
+.navbar {
+  background-color: inherit !important;
+}
+
+#footer-quickLinks {
+  margin-left: 0px !important;
   justify-content: center;
+}
+
+.fa-heart {
+  color: red;
 }
