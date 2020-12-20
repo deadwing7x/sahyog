@@ -1,0 +1,66 @@
+.whoWeAre {
+  height: 500px;
+  width: 1000px;
+  border: 2px solid white;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.whoWeAreText {
+  border: 3px solid orange;
+  padding-left: 10px;
+}
+
+.col-md-3 {
+  margin-top: 100px;
+  font-size: 45px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 800;
+}
+
+.col-md-9 {
+  margin-top: 90px;
+  font-size: 22px;
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 450px) {
+  .whoWeAre {
+    height: max-content;
+    width: 350px;
+    border: 2px solid white;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+
+  .whoWeAreText {
+    border: 3px solid orange;
+    padding-left: 10px;
+  }
+
+  .col-md-3 {
+    margin-top: 25px;
+    font-size: 30px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 600;
+  }
+
+  .col-md-9 {
+    margin-top: 25px;
+    font-size: 16px;
+    font-style: italic;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 300;
+  }
+}
