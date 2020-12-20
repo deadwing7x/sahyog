@@ -21,6 +21,7 @@
   color: white;
 }
 
-.navbar {
+#footer {
+  width: auto;
   justify-content: center;
 }

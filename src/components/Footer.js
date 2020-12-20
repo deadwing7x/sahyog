@@ -4,7 +4,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <div>
-      <Navbar className="row col-md-12" bg="dark" variant="dark">
+      <Navbar id='footer' className="row col-md-12" bg="dark" variant="dark">
         <div className="col-md-7 copyright">
           <div>Copyright © 2020</div>
           <div>Asansol Sahyog Welfare Organization</div>
