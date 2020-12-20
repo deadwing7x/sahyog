@@ -46,7 +46,19 @@ hr {
   border-bottom-right-radius: 25px;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (min-width: 320px) and (max-width: 400px) {
+  .carousel-image {
+    height: 220px;
+  }
+
+  #logoImage {
+    height: 80px;
+    width: 260px;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 450px) {
   .carousel-image {
     height: 250px;
   }
@@ -69,7 +81,7 @@ hr {
 }
 
 h2 {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 35px;
   font-weight: 900;
 }

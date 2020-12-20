@@ -1,0 +1,26 @@
+.footer-links {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(to right, orange, orange 50%, lightgray 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  transition: background-position 275ms ease;
+  background-position: 100%;
+}
+
+.footer-links:hover {
+  background-position: 0 100%;
+}
+
+.col-md-7.copyright {
+  text-align: center;
+  color: white;
+}
+
+.navbar {
+  justify-content: center;
+}
