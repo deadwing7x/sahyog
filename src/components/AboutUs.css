@@ -1,5 +1,5 @@
 .whoWeAre {
-  height: 500px;
+  height: max-content;
   width: 1000px;
   border: 2px solid white;
   margin-left: auto;
@@ -16,13 +16,13 @@
 }
 
 .col-md-3.whoWeAreDiv {
-  margin-top: 100px;
+  margin-top: 70px;
   font-size: 45px;
   font-weight: 800;
 }
 
 .col-md-9 {
-  margin-top: 90px;
+  margin-top: 70px;
   font-size: 22px;
   font-style: italic;
   font-weight: 600;
