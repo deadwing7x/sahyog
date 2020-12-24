@@ -1,0 +1,128 @@
+.whoWeAre {
+  height: 520px;
+  width: 1000px;
+  border: 2px solid white;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.whoWeAreText {
+  border: 3px solid orange;
+  padding-left: 10px;
+}
+
+.col-md-3.whoWeAreDiv {
+  margin-top: 70px;
+  font-size: 45px;
+  font-weight: 800;
+}
+
+.col-md-9.text {
+  margin-top: 70px;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 320px) and (max-width: 400px) {
+  .whoWeAre {
+    height: max-content;
+    width: 260px;
+    border: 2px solid white;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+
+  .whoWeAreText {
+    border: 3px solid orange;
+    padding-left: 10px;
+  }
+
+  .col-md-3.whoWeAreDiv {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .col-md-9.text {
+    margin-top: 20px;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 300;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 450px) {
+  .whoWeAre {
+    height: max-content;
+    width: 350px;
+    border: 2px solid white;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+
+  .whoWeAreText {
+    border: 3px solid orange;
+    padding-left: 10px;
+  }
+
+  .col-md-3.whoWeAreDiv {
+    margin-top: 25px;
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .col-md-9.text {
+    margin-top: 25px;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 300;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .whoWeAre {
+    height: max-content;
+    width: 700px;
+    border: 2px solid white;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+
+  .whoWeAreText {
+    border: 3px solid orange;
+    padding-left: 10px;
+  }
+
+  .col-md-3.whoWeAreDiv {
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .col-md-9.text {
+    margin-top: 30px;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+  }
+}
