@@ -20,6 +20,14 @@ const testimonials = [
       in a hope for a few.`
   },
   {
+    Name: "Aayush Deep Gupta",
+    DisplayPicture: "TeamMembers/AayushDeepGupta.jpg",
+    Position: "Advisory Committee",
+    Testimonial: `I became a part of Sahyog because since our birth we have lived for ourselves, but now the realisation has dawned on me, 
+      that one should do something for the underpriviledged children of the society. Seeing the poverty and living conditions of underpriviledged 
+      children. Through Sahyog I would like to work for their betterment of life !!!`,
+  },
+  {
     Name: "Sharanjit Singh Gandhi",
     DisplayPicture: "TeamMembers/SharanjitSinghGandhi.jpg",
     Position: "Advisory Committee",
@@ -27,14 +35,6 @@ const testimonials = [
       especially when it comes to the underprivileged children. We strongly believe that change starts with a few individuals 
       taking a stand and that is what we do. We begin as individuals trying to bring about a difference and in turn develop, 
       motivate and encourage these children who can then become the actual changemakers.`,
-  },
-  {
-    Name: "Aayush Deep Gupta",
-    DisplayPicture: "TeamMembers/AayushDeepGupta.jpg",
-    Position: "Advisory Committee",
-    Testimonial: `I became a part of Sahyog because since our birth we have lived for ourselves, but now the realisation has dawned on me, 
-      that one should do something for the underpriviledged children of the society. Seeing the poverty and living conditions of underpriviledged 
-      children. Through Sahyog I would like to work for their betterment of life !!!`,
   },
   {
     Name: "Rahul Paramanik",
