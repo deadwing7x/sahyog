@@ -17,7 +17,13 @@ const testimonials = [
       there are people who urgently need help right now. As you read this, there are children across India who need urgent access 
       to food, shelter, education, and care. You can give as much or as little as you want, but each small effort can bring in a 
       smile to a person, which is priceless. Sahyog may not be able to bring about a humungous change, but we can certainly bring 
-      in a hope for a few.`
+      in a hope for a few.`,
+  },
+  {
+    Name: "Saptarshi Sinha",
+    DisplayPicture: "TeamMembers/SaptarshiSinha.jpg",
+    Position: "Advisory Committee",
+    Testimonial: "",
   },
   {
     Name: "Aayush Deep Gupta",
@@ -44,6 +50,48 @@ const testimonials = [
       (something I really enjoy personally). It has also increased my ability to adapt to different cultural demands and behavioural 
       expectations and my ability to handle sensitive situations. Other than that, Sahyog has broadened my perspective and changed 
       the way I pursue my objectives and make decisions. To sum it up, it has had a positive impact on my life.`,
+  },
+  {
+    Name: "Pratip Banerjee",
+    DisplayPicture: "TeamMembers/PratipBanerjee.jpg",
+    Position: "Advisory Committee",
+    Testimonial: "",
+  },
+  {
+    Name: "Avisek Ghosh",
+    DisplayPicture: "TeamMembers/AvisekGhosh.jpg",
+    Position: "Advisory Committee",
+    Testimonial: "",
+  },
+  {
+    Name: "Ajitabha Maji",
+    DisplayPicture: "TeamMembers/AjitabhaMaji.jpg",
+    Position: "Advisory Committee",
+    Testimonial: "",
+  },
+  {
+    Name: "Snehasis Chatterjee",
+    DisplayPicture: "TeamMembers/SnehasisChatterjee.jpg",
+    Position: "Advisory Committee",
+    Testimonial: "",
+  },
+  {
+    Name: "Sukarna Hazra",
+    DisplayPicture: "TeamMembers/SukarnaHazra.jpg",
+    Position: "Advisory Committee",
+    Testimonial: "",
+  },
+  {
+    Name: "Debanjan Dasgupta",
+    DisplayPicture: "TeamMembers/DebanjanDasgupta.jpg",
+    Position: "Advisory Committee",
+    Testimonial: "",
+  },
+  {
+    Name: "Adrija Sengupta",
+    DisplayPicture: "TeamMembers/AdrijaSengupta.jpg",
+    Position: "Member",
+    Testimonial: "",
   },
   {
     Name: "Abhya Kushwaha",
