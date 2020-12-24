@@ -38,7 +38,7 @@ const testimonials = [
   {
     Name: "Abhya Kushwaha",
     DisplayPicture: "TeamMembers/AbhyaKushwaha.jpg",
-    Position: "Advisory Committe",
+    Position: "Member",
     Testimonial: `I am very pleased to say that my experience of associating with Sahyog has been excellent and I feel it is a 
       privilege too. My appreciation for the excellent work Sahyog is carrying out in uplifting under- privileged children. I am 
       honoured to be a part of the organisation in a small way and shall try to remain so. My good wishes to Sahyog to continue 
@@ -47,7 +47,7 @@ const testimonials = [
   {
     Name: "Aditya Raj",
     DisplayPicture: "TeamMembers/AdityaRaj.jpg",
-    Position: "Advisory Committee",
+    Position: "Member",
     Testimonial: `I joined Sahyog intending to contribute to the betterment and welfare of society. Sahyog gives me a platform 
       to connect and help peoples with need, a small connection is what it takes to make someone's day and put a smile on there 
       face. Seeing and knowing you can be the reason for someone's smile and their well-being is what makes the difference.`,
