@@ -12,6 +12,9 @@ const AboutUs = () => {
         <img id="logoImageAboutUs" src={logo} alt="logo" />
         <div className="intro">{intro}</div>
       </div>
+      <div id="team">
+        <p>Our Team</p>
+      </div>
       <div className="col-md-12 testimonials">
         {testimonials.map((person) => {
           return (
