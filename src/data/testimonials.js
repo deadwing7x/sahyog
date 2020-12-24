@@ -10,6 +10,16 @@ const testimonials = [
       which our expectations have surpassed. Sahyog is on a mission. A mission that will bring on a change for the betterment.`,
   },
   {
+    Name: "Avishek Agarwal",
+    DisplayPicture: "TeamMembers/AvishekAgarwal.jpg",
+    Position: "Advisory Committee",
+    Testimonial: `Happiness comes from sharing. We all have a lifetime of opportunities to do something for the society, however, 
+      there are people who urgently need help right now. As you read this, there are children across India who need urgent access 
+      to food, shelter, education, and care. You can give as much or as little as you want, but each small effort can bring in a 
+      smile to a person, which is priceless. Sahyog may not be able to bring about a humungous change, but we can certainly bring 
+      in a hope for a few.`
+  },
+  {
     Name: "Sharanjit Singh Gandhi",
     DisplayPicture: "TeamMembers/SharanjitSinghGandhi.jpg",
     Position: "Advisory Committee",
