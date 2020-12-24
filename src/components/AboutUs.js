@@ -7,9 +7,9 @@ import intro from "../data/intro";
 
 const AboutUs = () => {
   return (
-    <div>
+    <div className='aboutUsDiv'>
+      <img id="logoImageAboutUs" src={logo} alt="logo" />
       <div className="col-md-12 logoWhoWeAre">
-        <img id="logoImageAboutUs" src={logo} alt="logo" />
         <div className="intro">{intro}</div>
       </div>
       <div id="team">
