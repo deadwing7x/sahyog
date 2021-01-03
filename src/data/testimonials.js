@@ -23,7 +23,12 @@ const testimonials = [
     Name: "Saptarshi Sinha",
     DisplayPicture: "TeamMembers/SaptarshiSinha.jpg",
     Position: "Advisory Committee",
-    Testimonial: "",
+    Testimonial: `Asansol Sahyog Welfare Organization was started to create a world where child's future is not bound by 
+      circumstances (disability, socioeconomic status, race, gender or otherwise). Children with special needs from disadvantaged 
+      background are the most valuable as parents do not have access to information or resources to help their child. Sahyog aims 
+      to help improve the lives of children impromised communities by providing them with all basic necessities and serve as a 
+      resource so they can excell academically and socially. Sahyog envisions to strengthen human rights culture and an all 
+      inclusive pluralist society,  free of violence, injustice, discrimination.`,
   },
   {
     Name: "Aayush Deep Gupta",
@@ -55,11 +60,23 @@ const testimonials = [
     Name: "Pratip Banerjee",
     DisplayPicture: "TeamMembers/PratipBanerjee.jpg",
     Position: "Advisory Committee",
-    Testimonial: "",
+    Testimonial: `Sahyog as the name signifies, its a beginning, a ray of hope, a foundation for better future for the 
+      underprivileged, enlightening and enriching their lives. I would say what really matters is not about a humble beginning 
+      but the enormous vision with which its initiated. You all at Sahyog have proved it time and again making us all soo very 
+      proud of you and grateful for bringing ahead Asansol's name.`,
   },
   {
     Name: "Avisek Ghosh",
     DisplayPicture: "TeamMembers/AvisekGhosh.jpg",
+    Position: "Advisory Committee",
+    Testimonial: `Sahyog, It's not a NGO, It's a name for the helping hand of the begger ,the homeless ,the street kids. 
+      Whenever they require Sahyog is filled there needs as much as we can, We Work for Shayog as a team,to help for the people, 
+      by the people and Committed to make an example for the people who don't having enough for their life. Please Support us so 
+      we can help enormously for them.`,
+  },
+  {
+    Name: "Ramkrishna Kundu",
+    DisplayPicture: "TeamMembers/RamkrishnaKundu.jpg",
     Position: "Advisory Committee",
     Testimonial: "",
   },
