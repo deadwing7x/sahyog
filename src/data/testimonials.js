@@ -26,9 +26,9 @@ const testimonials = [
     Testimonial: `Asansol Sahyog Welfare Organization was started to create a world where child's future is not bound by 
       circumstances (disability, socioeconomic status, race, gender or otherwise). Children with special needs from disadvantaged 
       background are the most valuable as parents do not have access to information or resources to help their child. Sahyog aims 
-      to help improve the lives of children impromised communities by providing them with all basic necessities and serve as a 
-      resource so they can excell academically and socially. Sahyog envisions to strengthen human rights culture and an all 
-      inclusive pluralist society,  free of violence, injustice, discrimination.`,
+      to help improve the lives of children improvised communities by providing them with all basic necessities and serve as a 
+      resource so they can excel academically and socially. Sahyog envisions to strengthen human rights culture and an all 
+      inclusive pluralist society,  free of violence, injustice, discrimination and stereotypes.`,
   },
   {
     Name: "Aayush Deep Gupta",
