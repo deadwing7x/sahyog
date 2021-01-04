@@ -8,6 +8,12 @@
   margin-right: auto;
 }
 
+@media screen and (min-width: 1024px) {
+  .row.col-md-12.gallery {
+    padding-top: 2.5rem !important;
+  }
+}
+
 #campaignGallery {
   text-align: center;
 }
