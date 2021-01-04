@@ -1,5 +1,5 @@
 .row.col-md-12.gallery {
-  background-color: #f0e660;
+  background-color: orange;
   text-align: center;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -65,7 +65,7 @@
 
   .campaignImage {
     width: 250px;
-    height: 150px;
+    height: 200px;
     border-radius: 15px;
   }
 
