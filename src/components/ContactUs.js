@@ -62,29 +62,29 @@ const ContactUs = () => {
           </div>
           <div className="col-md-3 contactUsDiv">
             <div className="contactInfo">
-              <i id="phone" className="fas fa-map-marker-alt fa-lg"></i> Apcar
+              <i id="phone" className="fas fa-map-marker-alt fa-md"></i> Apcar
               Garden, Asansol
             </div>
             <div className="contactInfo">
               <a className="phoneNumbers" href="tel:+918250785627">
-                <i className="fas fa-phone fa-flip-horizontal fa-lg"></i>{" "}
+                <i className="fas fa-phone fa-flip-horizontal fa-md"></i>{" "}
                 +918250785627
               </a>
             </div>
             <div className="contactInfo">
               <a className="phoneNumbers" href="tel:+917001783564">
-                <i className="fas fa-phone fa-flip-horizontal fa-lg"></i>{" "}
+                <i className="fas fa-phone fa-flip-horizontal fa-md"></i>{" "}
                 +917001783564
               </a>
             </div>
             <div className="contactInfo">
               <a className="phoneNumbers" href="tel:+918918281898">
-                <i className="fas fa-phone fa-flip-horizontal fa-lg"></i>{" "}
+                <i className="fas fa-phone fa-flip-horizontal fa-md"></i>{" "}
                 +918918281898
               </a>
             </div>
             <div className="contactInfo">
-              <i id="email" className="fas fa-envelope fa-lg"></i>{" "}
+              <i id="email" className="fas fa-envelope fa-md"></i>{" "}
               organizationsahyog@gmail.com
             </div>
           </div>

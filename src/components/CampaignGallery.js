@@ -6,7 +6,7 @@ import "./CampaignGallery.css";
 const CampaignGallery = () => {
   return (
     <div className="jumbotron" id="campaignGallery">
-      <p id="campaigns">Our Campaigns</p>
+      <p id="campaigns">Campaign Gallery</p>
       <div className="row col-md-12 gallery">
         {campaigns.map((campaign) => {
           return (
