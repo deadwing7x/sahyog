@@ -24,6 +24,7 @@
 .contactInfo {
   margin-top: 1rem;
   color: black;
+  word-break: break-all;
 }
 
 .phoneNumbers,

@@ -1,0 +1,67 @@
+.row.col-md-12.gallery {
+  background-color: #f0e660;
+  text-align: center;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#campaignGallery {
+  text-align: center;
+}
+
+#campaigns {
+  font-size: 50px;
+  font-weight: 900;
+  font-family: sans-serif;
+  color: white;
+}
+
+.campaignImage {
+  width: 200px;
+  height: 150px;
+  border-radius: 15px;
+}
+
+.campaignText {
+  font-size: 20px;
+  font-weight: 600;
+  font-style: italic;
+  font-family: sans-serif;
+  color: black;
+}
+
+@media screen and (min-width: 320px) and (max-width: 400px) {
+  #campaigns {
+    font-size: 30px;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: white;
+  }
+
+  .campaignText {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    font-family: sans-serif;
+    color: black;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 450px) {
+  #campaigns {
+    font-size: 36px;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: white;
+  }
+
+  .campaignText {
+    font-size: 18px;
+    font-weight: 500;
+    font-style: italic;
+    font-family: sans-serif;
+    color: black;
+  }
+}

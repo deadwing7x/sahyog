@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import MainContent from "./components/MainContent";
 import { Route, BrowserRouter, Switch } from "react-router-dom";
 import AboutUs from "./components/AboutUs";
+import CampaignGallery from "./components/CampaignGallery";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route exact path="/">
             <MainContent />
             <WhoAreWe />
+            <CampaignGallery />
             <ContactUs />
           </Route>
           <Footer />
