@@ -20,7 +20,7 @@
     height: 120px;
     width: 150px;
     margin-left: -5px;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     border-radius: 15px;
   }
 
@@ -40,7 +40,7 @@
     height: 180px;
     width: 250px;
     margin-left: -5px;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     border-radius: 15px;
   }
 
@@ -60,7 +60,7 @@
   .campaign-images {
     height: 120px;
     width: 200px;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     border-radius: 15px;
     margin-left: -12px;
   }
