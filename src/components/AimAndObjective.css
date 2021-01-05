@@ -1,8 +1,8 @@
 .jumbotron.aim-vision {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .aim {
@@ -11,7 +11,7 @@
   background-size: 100% 100%;
   padding-top: 3rem;
   padding-bottom: 10rem;
-  border-radius: 10px;
+  border-radius: 15px;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -82,7 +82,7 @@
 
   .objective-list {
     margin-top: 2rem;
-    padding-right: 1rem;
+    padding-right: 0.5rem;
   }
 
   .objective {
