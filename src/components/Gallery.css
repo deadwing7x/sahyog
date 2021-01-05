@@ -14,12 +14,20 @@
   }
 }
 
+.col-md-3.campaigns {
+  padding-bottom: 1rem;
+}
+
 .individual-campaign {
   background-color: transparent;
   border: none;
 }
 
 #gallery {
+  text-align: center;
+}
+
+.campaignImagesList {
   text-align: center;
 }
 

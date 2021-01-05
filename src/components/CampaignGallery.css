@@ -1,4 +1,4 @@
-.row.col-md-12.gallery {
+.galleryDiv {
   border: 4px solid orange;
   background-color: inherit;
   text-align: center;
@@ -6,12 +6,13 @@
   padding-right: 1.5rem;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 2.5rem;
+  border-radius: 25px;
+  padding-top: 2.5rem !important;
 }
 
-@media screen and (min-width: 1024px) {
-  .row.col-md-12.gallery {
-    padding-top: 2.5rem !important;
-  }
+.col-md-3.campaigns {
+  padding-bottom: 1rem;
 }
 
 #campaignGallery {
@@ -27,7 +28,7 @@
 
 @media screen and (min-width: 320px) and (max-width: 400px) {
   #campaigns {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 500;
     font-family: sans-serif;
     color: white;
@@ -36,7 +37,7 @@
 
 @media screen and (min-width: 400px) and (max-width: 450px) {
   #campaigns {
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 700;
     font-family: sans-serif;
     color: white;
