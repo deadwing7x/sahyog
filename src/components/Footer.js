@@ -3,7 +3,7 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <div>
+    <div className="footer-class">
       <Navbar expand="lg" id="footer-quickLinks" bg="dark" variant="dark">
         <Navbar>
           <Nav>
@@ -35,7 +35,14 @@ const Footer = () => {
       <div className="copyright">
         <div>Copyright © 2020</div>
         <div>Asansol Sahyog Welfare Organization</div>
-        <div>Designed with <i className="fas fa-heart"></i> by Anubhav</div>
+        <a
+          className="dev"
+          target="_blank"
+          href="https://www.linkedin.com/in/anubhav-sarkar-52965786/"
+          rel="noopener noreferrer"
+        >
+          Designed with <i className="fas fa-heart"></i> by Anubhav
+        </a>
       </div>
     </div>
   );

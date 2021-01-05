@@ -16,6 +16,16 @@
   background-position: 0 100%;
 }
 
+.dev {
+  color: white;
+  cursor: pointer;
+}
+
+.dev:hover {
+  color: white;
+  text-decoration: none;
+}
+
 .copyright {
   text-align: center;
   color: white;
