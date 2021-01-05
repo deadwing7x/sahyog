@@ -33,7 +33,7 @@ const Footer = () => {
         </Navbar>
       </Navbar>
       <div className="copyright">
-        <div>Copyright © 2020</div>
+        <div>Copyright © 2021</div>
         <div>Asansol Sahyog Welfare Organization</div>
         <a
           className="dev"

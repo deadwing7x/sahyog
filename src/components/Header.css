@@ -12,7 +12,9 @@
   transition: background-position 700ms ease;
   background-position: 100%;
   font-family: sans-serif;
-  font-weight: 800;
+  font-weight: 500;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
 }
 
 .nav-link:hover {
