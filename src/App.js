@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import { Route, BrowserRouter, Switch } from "react-router-dom";
 import AboutUs from "./components/AboutUs";
 import Home from "./components/Home";
-import AimAndObjective from "./components/AimAndObjective";
+import Gallery from "./components/Gallery";
 
 function App() {
   return (
@@ -18,8 +18,8 @@ function App() {
           <Route exact path="/" component={Home}>
             <Home />
           </Route>
-          <Route path="/aim-and-vision" component={AimAndObjective}>
-            <AimAndObjective />
+          <Route path="/campaign-gallery" component={Gallery}>
+            <Gallery />
           </Route>
           <Footer />
         </div>

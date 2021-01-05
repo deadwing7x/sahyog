@@ -1,0 +1,62 @@
+.campaignImage {
+  border: 10px solid white;
+  width: 300px;
+  height: 200px;
+  border-radius: 15px;
+}
+
+.campaignText {
+  font-size: 20px;
+  font-weight: 600;
+  font-style: italic;
+  font-family: sans-serif;
+  color: white;
+}
+
+@media screen and (min-width: 320px) and (max-width: 400px) {
+  .campaignImage {
+    width: 200px;
+    height: 150px;
+    border-radius: 15px;
+  }
+
+  .campaignText {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    font-family: sans-serif;
+    color: white;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 450px) {
+  .campaignImage {
+    width: 250px;
+    height: 200px;
+    border-radius: 15px;
+  }
+
+  .campaignText {
+    font-size: 18px;
+    font-weight: 500;
+    font-style: italic;
+    font-family: sans-serif;
+    color: white;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .campaignImage {
+    width: 180px;
+    height: 100px;
+    border-radius: 15px;
+  }
+
+  .campaignText {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    font-family: sans-serif;
+    color: white;
+  }
+}

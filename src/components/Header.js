@@ -12,9 +12,7 @@ const Header = () => {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
           <Nav.Link href="/about-us">About Us</Nav.Link>
-          <Nav.Link href="#gallery">Gallery</Nav.Link>
-          <Nav.Link href="/aim-and-vision">Aim and Vision</Nav.Link>
-          <Nav.Link href="#contribute">Contribute</Nav.Link>
+          <Nav.Link href="/campaign-gallery">Campaign Gallery</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

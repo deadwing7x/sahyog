@@ -1,6 +1,6 @@
 import React from "react";
-import { Figure } from "react-bootstrap";
 import campaigns from "../data/campaigns";
+import Campaign from "./Campaign";
 import "./CampaignGallery.css";
 
 const CampaignGallery = () => {
@@ -11,16 +11,7 @@ const CampaignGallery = () => {
         {campaigns.map((campaign) => {
           return (
             <div className="col-md-3">
-              <Figure>
-                <Figure.Image
-                  src={campaign.Thumbnail}
-                  className="campaignImage"
-                  alt={campaign.Name}
-                />
-                <Figure.Caption className="campaignText">
-                  {campaign.Name}
-                </Figure.Caption>
-              </Figure>
+              <Campaign Name={campaign.Name} Thumbnail={campaign.Thumbnail} />
             </div>
           );
         })}
