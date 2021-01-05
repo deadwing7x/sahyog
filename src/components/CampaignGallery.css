@@ -11,6 +11,10 @@
   padding-top: 2.5rem !important;
 }
 
+.row.col-md-12.gallery {
+  background-color: transparent;
+}
+
 .col-md-3.campaigns {
   padding-bottom: 1rem;
 }
