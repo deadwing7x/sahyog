@@ -5,7 +5,7 @@ const AimAndObjective = () => {
   return (
     <div className="jumbotron aim-vision">
       <div className="aim">
-        <p className="aim-text">Aim and Objective</p>
+        <p className="aim-text">Aim and Vision</p>
         <ul className="objective-list">
           <li className="objective">
             To identify the weaker section of society and serve them by
