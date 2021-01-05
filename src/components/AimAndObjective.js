@@ -3,7 +3,7 @@ import "./AimAndObjective.css";
 
 const AimAndObjective = () => {
   return (
-    <div className="jumbotron aim-vision">
+    <div id="aimandvision" className="jumbotron aim-vision">
       <div className="aim">
         <p className="aim-text">Aim and Vision</p>
         <ul className="objective-list">
