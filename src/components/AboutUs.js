@@ -4,10 +4,11 @@ import logo from "../assets/logo.png";
 import "./AboutUs.css";
 import testimonials from "../data/testimonials";
 import intro from "../data/intro";
+import LazyLoad from "react-lazy-load";
 
 const AboutUs = () => {
   return (
-    <div className='aboutUsDiv'>
+    <div className="aboutUsDiv">
       <img id="logoImageAboutUs" src={logo} alt="logo" />
       <div className="col-md-12 logoWhoWeAre">
         <div className="intro">{intro}</div>
@@ -18,15 +19,17 @@ const AboutUs = () => {
       <div className="col-md-12 testimonials">
         {testimonials.map((person) => {
           return (
-            <div className="row" id="portfolio">
-              <People
-                key={person.Name}
-                name={person.Name}
-                position={person.Position}
-                testimonial={person.Testimonial}
-                image={`${process.env.PUBLIC_URL}/${person.DisplayPicture}`}
-              />
-            </div>
+            <LazyLoad className="filler" key={person.Name} offset={150}>
+              <div className="row" id="portfolio">
+                <People
+                  key={person.Name}
+                  name={person.Name}
+                  position={person.Position}
+                  testimonial={person.Testimonial}
+                  image={`${process.env.PUBLIC_URL}/${person.DisplayPicture}`}
+                />
+              </div>
+            </LazyLoad>
           );
         })}
       </div>
