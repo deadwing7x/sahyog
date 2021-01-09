@@ -1,6 +1,6 @@
 import { Jumbotron } from "react-bootstrap";
 import "./WhoAreWe.css";
-import intro from "../data/intro";
+import intro from "../../data/intro";
 
 const WhoAreWe = () => {
   return (

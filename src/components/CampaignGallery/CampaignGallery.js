@@ -1,6 +1,6 @@
 import React from "react";
-import campaigns from "../data/campaigns";
-import Campaign from "./Campaign";
+import campaigns from "../../data/campaigns";
+import Campaign from "../Campaign/Campaign";
 import "./CampaignGallery.css";
 
 const CampaignGallery = () => {

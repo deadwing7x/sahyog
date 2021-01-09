@@ -1,9 +1,9 @@
 import React from "react";
-import People from "./People";
-import logo from "../assets/logo.png";
+import People from "../People/People";
+import logo from "../../assets/logo.png";
 import "./AboutUs.css";
-import testimonials from "../data/testimonials";
-import intro from "../data/intro";
+import testimonials from "../../data/testimonials";
+import intro from "../../data/intro";
 import LazyLoad from "react-lazy-load";
 
 const AboutUs = () => {

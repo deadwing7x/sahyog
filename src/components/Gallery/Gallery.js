@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import Campaign from "../components/Campaign";
-import campaigns from "../data/campaigns";
+import Campaign from "../Campaign/Campaign";
+import campaigns from "../../data/campaigns";
 import { Button } from "react-bootstrap";
 import "./Gallery.css";
-import CampaignPictures from "./CampaignPictures";
+import CampaignPictures from "../CampaignPictures/CampaignPictures";
 
 const Gallery = () => {
   const [campaignImages, setCampaignImages] = useState([]);

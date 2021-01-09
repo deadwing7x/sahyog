@@ -1,7 +1,7 @@
 import { Jumbotron, Image, Form } from "react-bootstrap";
 import * as emailjs from "emailjs-com";
 import "./ContactUs.css";
-import logo from "../assets/favicon.png";
+import logo from "../../assets/favicon.png";
 import { useState } from "react";
 
 const ContactUs = () => {

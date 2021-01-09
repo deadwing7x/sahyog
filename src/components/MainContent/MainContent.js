@@ -1,9 +1,9 @@
 import { Button, Jumbotron, Carousel } from "react-bootstrap";
 import "./MainContent.css";
-import logo from "../assets/logo.png";
-import carousel1 from "../assets/carousel-1.jpeg";
-import carousel2 from "../assets/carousel-2.jpeg";
-import carousel3 from "../assets/carousel-3.jpeg";
+import logo from "../../assets/logo.png";
+import carousel1 from "../../assets/carousel-1.jpeg";
+import carousel2 from "../../assets/carousel-2.jpeg";
+import carousel3 from "../../assets/carousel-3.jpeg";
 
 const MainContent = () => {
   return (
@@ -56,7 +56,7 @@ const MainContent = () => {
               <img
                 className="d-block w-100 carousel-image"
                 src={carousel2}
-                alt="Third slide"
+                alt="Second slide"
               />
             </Carousel.Item>
             <Carousel.Item>
