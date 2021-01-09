@@ -11,7 +11,7 @@ const Home = () => {
     <>
       <MainContent />
       <WhoAreWe />
-      <LazyLoad offsetVertical={300}>
+      <LazyLoad offsetVertical={500}>
         <AimAndObjective />
       </LazyLoad>
       <CampaignGallery />

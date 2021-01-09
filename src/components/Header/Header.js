@@ -1,5 +1,5 @@
 import { Navbar, Nav, Image, NavbarBrand } from "react-bootstrap";
-import "./Header.css";
+import "../Header/Header.css";
 import logo from "../../assets/favicon.png";
 
 const Header = () => {
