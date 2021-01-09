@@ -137,7 +137,7 @@ const ContactUs = () => {
                   required
                   as="select"
                 >
-                  <option selected disabled>
+                  <option defaultValue disabled>
                     Select an option
                   </option>
                   {options.map((option) => {

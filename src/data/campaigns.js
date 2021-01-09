@@ -42,7 +42,7 @@ const campaigns = [
     Thumbnail: generateRandomThumbnail(independanceDay),
   },
   {
-    Name: "Tribute to our martyred soldeirs",
+    Name: "Tribute to our martyred soldiers",
     Images: tribute,
     Thumbnail: generateRandomThumbnail(tribute),
   },

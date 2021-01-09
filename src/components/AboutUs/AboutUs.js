@@ -19,7 +19,7 @@ const AboutUs = () => {
       <div className="col-md-12 testimonials">
         {testimonials.map((person) => {
           return (
-            <LazyLoad className="filler" key={person.Name} offset={150}>
+            <LazyLoad className="filler" key={person.Name} offset={300}>
               <div className="row" id="portfolio">
                 <People
                   key={person.Name}

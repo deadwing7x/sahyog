@@ -1,9 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import campaigns from "../../data/campaigns";
 import Campaign from "../Campaign/Campaign";
 import "./CampaignGallery.css";
+import { Button } from "react-bootstrap";
+import { useHistory } from "react-router-dom";
 
 const CampaignGallery = () => {
+  const [campaignImages, setCampaignImages] = useState([]);
+  const [redirect, setRedirect] = useState(false);
+  const [campaignName, setCampaignName] = useState("");
+  const history = useHistory();
+
+  useEffect(() => {
+    if (redirect) {
+      history.push({
+        pathname: `/campaign-gallery/:${campaignName}`,
+        state: {
+          images: campaignImages,
+        },
+      });
+    }
+  });
+
   return (
     <div className="jumbotron" id="campaignGallery">
       <div className="galleryDiv">
@@ -11,8 +29,23 @@ const CampaignGallery = () => {
         <div className="row col-md-12 gallery">
           {campaigns.map((campaign) => {
             return (
-              <div className="col-md-3 campaigns">
-                <Campaign Name={campaign.Name} Thumbnail={campaign.Thumbnail} />
+              <div className="col-md-3 campaigns" key={campaign.Name}>
+                <Button
+                  onClick={() => {
+                    setCampaignName(campaign.Name);
+                    setRedirect(true);
+                    setCampaignImages(
+                      campaigns.filter((x) => x.Name === campaign.Name)[0]
+                        .Images
+                    );
+                  }}
+                  className="individual-campaign"
+                >
+                  <Campaign
+                    Name={campaign.Name}
+                    Thumbnail={campaign.Thumbnail}
+                  />
+                </Button>
               </div>
             );
           })}
