@@ -1,6 +1,5 @@
 import React from "react";
-import { Modal } from "react-bootstrap";
-import Carousel from 'react-bootstrap/Carousel'
+import { Modal, Carousel, Image } from "react-bootstrap";
 
 const ImageSlideShowModal = (props) => {
   return (
@@ -17,20 +16,14 @@ const ImageSlideShowModal = (props) => {
       </Modal.Header>
       <Modal.Body>
         <Carousel>
-          {props.images.map((image, i) => {
+          {props.images.map((image) => {
             return (
-              <div key={i + 1}>
-                <Carousel.Item>
-                  <img
-                    className="d-block w-100"
-                    src={image}
-                    alt={props.name}
-                  />
-                  <Carousel.Caption>
-                    <h4>{props.caption}</h4>
-                  </Carousel.Caption>
-                </Carousel.Item>
-              </div>
+              <Carousel.Item>
+                <Image src={image} height={600} alt={props.name} />
+                <Carousel.Caption>
+                  <h4>{props.caption}</h4>
+                </Carousel.Caption>
+              </Carousel.Item>
             );
           })}
         </Carousel>
