@@ -10,13 +10,16 @@ const Gallery = () => {
   const [campaignImages, setCampaignImages] = useState([]);
   const [campaignClicked, setCampaignClicked] = useState(false);
   const [campaignName, setCampaignName] = useState("");
+  const [caption, setCaption] = useState("");
   const match = useRouteMatch("/campaign-gallery/:campaign");
   const location = useLocation();
   let imagesArr = [];
   let nameOfCampaign = "";
+  let campaignCaption = "";
   if (match) {
     nameOfCampaign = match.params.campaign.split(":")[1];
     imagesArr = location.state.images;
+    campaignCaption = location.state.caption;
     setTimeout(() => {
       document.getElementById("imagesList").scrollIntoView({
         behavior: "smooth",
@@ -37,6 +40,9 @@ const Gallery = () => {
                   setCampaignImages(
                     campaigns.filter((x) => x.Name === campaign.Name)[0].Images
                   );
+                  setCaption(
+                    campaigns.filter((x) => x.Name === campaign.Name)[0].Caption
+                  );
                   setCampaignName(campaign.Name);
                   document.getElementById("imagesList").scrollIntoView({
                     behavior: "smooth",
@@ -53,12 +59,20 @@ const Gallery = () => {
           {campaignClicked ? (
             <>
               <p id="name">{campaignName}</p>
-              <CampaignPictures Images={campaignImages} />
+              <CampaignPictures
+                campaignName={campaignName}
+                images={campaignImages}
+                caption={caption}
+              />
             </>
           ) : match ? (
             <>
               <p id="name">{nameOfCampaign}</p>
-              <CampaignPictures Images={imagesArr} />
+              <CampaignPictures
+                campaignName={nameOfCampaign}
+                caption={campaignCaption}
+                images={imagesArr}
+              />
             </>
           ) : (
             ""

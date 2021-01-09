@@ -9,6 +9,7 @@ const CampaignGallery = () => {
   const [campaignImages, setCampaignImages] = useState([]);
   const [redirect, setRedirect] = useState(false);
   const [campaignName, setCampaignName] = useState("");
+  const [caption, setCaption] = useState("");
   const history = useHistory();
 
   useEffect(() => {
@@ -17,6 +18,7 @@ const CampaignGallery = () => {
         pathname: `/campaign-gallery/:${campaignName}`,
         state: {
           images: campaignImages,
+          caption: caption,
         },
       });
     }
@@ -37,6 +39,10 @@ const CampaignGallery = () => {
                     setCampaignImages(
                       campaigns.filter((x) => x.Name === campaign.Name)[0]
                         .Images
+                    );
+                    setCaption(
+                      campaigns.filter((x) => x.Name === campaign.Name)[0]
+                        .Caption
                     );
                   }}
                   className="individual-campaign"
