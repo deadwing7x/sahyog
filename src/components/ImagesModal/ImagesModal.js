@@ -2,6 +2,11 @@ import React from "react";
 import { Modal, Carousel, Image } from "react-bootstrap";
 
 const ImageSlideShowModal = (props) => {
+  const carouselImagesStyle = {
+    height: "500px",
+    width: "auto",
+  };
+
   return (
     <Modal
       {...props}
@@ -19,9 +24,13 @@ const ImageSlideShowModal = (props) => {
           {props.images.map((image) => {
             return (
               <Carousel.Item>
-                <Image src={image} height={600} alt={props.name} />
+                <Image
+                  src={image}
+                  style={carouselImagesStyle}
+                  alt={props.name}
+                />
                 <Carousel.Caption>
-                  <h4>{props.caption}</h4>
+                  <p>{props.caption}</p>
                 </Carousel.Caption>
               </Carousel.Item>
             );
