@@ -5,10 +5,10 @@ import "./CampaignPictures.css";
 
 const CampaignPictures = (props) => {
   const [modalShow, setModalShow] = useState(false);
+  const [index, setIndex] = useState(0);
 
   let currentImage = "";
   let currentIndex = 0;
-  const [index, setIndex] = useState(0);
 
   const handleImageClick = (image) => {
     currentImage = props.images.filter((x) => x === image);

@@ -4,6 +4,7 @@ import ContactUs from "../ContactUs/ContactUs";
 import MainContent from "../MainContent/MainContent";
 import WhoAreWe from "../WhoAreWe/WhoAreWe";
 import AimAndObjective from "../AimAndObjective/AimAndObjective";
+import Recognitions from "../Recognitions/Recognitions";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <WhoAreWe />
       <AimAndObjective />
       <CampaignGallery />
+      <Recognitions />
       <ContactUs />
     </>
   );
