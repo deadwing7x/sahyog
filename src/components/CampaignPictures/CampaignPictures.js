@@ -6,6 +6,17 @@ import "./CampaignPictures.css";
 const CampaignPictures = (props) => {
   const [modalShow, setModalShow] = useState(false);
 
+  let currentImage = "";
+  let currentIndex = 0;
+  const [index, setIndex] = useState(0);
+
+  const handleImageClick = (image) => {
+    currentImage = props.images.filter((x) => x === image);
+    currentIndex = props.images.indexOf(currentImage[0]);
+    setIndex(currentIndex);
+    setModalShow(true);
+  };
+
   return (
     <div className="row col-md-12 campaignImagesDiv">
       {props.images.map((image) => {
@@ -17,7 +28,9 @@ const CampaignPictures = (props) => {
                 src={image}
                 title="Click to view enlarged image"
                 alt={props.campaignName}
-                onClick={() => setModalShow(true)}
+                onClick={() => {
+                  handleImageClick(image);
+                }}
               />
             </div>
           </div>
@@ -27,6 +40,7 @@ const CampaignPictures = (props) => {
         show={modalShow}
         name={props.campaignName}
         images={props.images}
+        currentIndex={index}
         caption={props.caption}
         onHide={() => setModalShow(false)}
       />

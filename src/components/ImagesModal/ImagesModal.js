@@ -1,11 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Modal, Carousel, Image } from "react-bootstrap";
+import "./ImagesModal.css";
 
-const ImageSlideShowModal = (props) => {
+const PicturesCarousel = (props) => {
+  const [mounted, setMounted] = useState(false);
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    setMounted(true);
+    return () => {
+      setMounted(false);
+    };
+  }, []);
+
+  const handleSelect = (selectedIndex) => {
+    setIndex(selectedIndex);
+  };
+
+  const handleOnLoad = () => {
+    setMounted(false);
+  };
+
   return (
     <Modal
       {...props}
       size="lg"
+      dialogClassName="myModal"
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
@@ -15,13 +35,22 @@ const ImageSlideShowModal = (props) => {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <Carousel>
+        <Carousel
+          activeIndex={mounted ? props.currentIndex : index}
+          onSelect={handleSelect}
+          onClickCapture={handleOnLoad}
+          interval={1500}
+        >
           {props.images.map((image) => {
             return (
               <Carousel.Item>
-                <Image src={image} alt={props.name} />
+                <Image
+                  src={image}
+                  className="d-block w-100 carouselImage"
+                  alt={props.name}
+                />
                 <Carousel.Caption>
-                  <p>{props.caption}</p>
+                  <h5>{props.caption}</h5>
                 </Carousel.Caption>
               </Carousel.Item>
             );
@@ -30,6 +59,10 @@ const ImageSlideShowModal = (props) => {
       </Modal.Body>
     </Modal>
   );
+};
+
+const ImageSlideShowModal = (props) => {
+  return <PicturesCarousel {...props} />;
 };
 
 export default ImageSlideShowModal;
