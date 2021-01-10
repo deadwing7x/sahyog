@@ -84,13 +84,22 @@ const testimonials = [
     Name: "Ajitabha Maji",
     DisplayPicture: "TeamMembers/AjitabhaMaji.jpg",
     Position: "Advisory Committee",
-    Testimonial: "",
+    Testimonial: `It gives me immense pleasure to share my thoughts about Sahyog. The idea to have a realistic NGO strike to 
+      me when I came across with underprivileged children and people who were deprived of basic needs like education, health care 
+      and nutrition. In short duration Sahyog has done tremendous work for upliftment of underprivileged children and societies.`,
   },
   {
     Name: "Snehasis Chatterjee",
     DisplayPicture: "TeamMembers/SnehasisChatterjee.jpg",
     Position: "Advisory Committee",
-    Testimonial: "",
+    Testimonial: `While growing up in suburban/rural parts of India, I closely witnessed poverty and suffering of the people in 
+      the locality and it was a heartrending sight for me as a kid. The movie Swades served as a great inspiration for me as it 
+      instilled in me a sense of responsibility towards my people and communities with limited access to basic amenities like food, 
+      shelter and clothing. I knew that I had to find a way to bring smiles to their faces. That is when I finally joined Asansol 
+      Sahyog Welfare Organization. The visions and missions of Sahyog align with mine and together we have been able to work 
+      towards the common goal of providing means for their survival. We believe that every child has a right to education and every 
+      human being is entitled to the basic amenities of life. We look forward to serving them in the future where the world would 
+      be brighter with their dreams and they won't suffer any injustice and discrimination.`,
   },
   {
     Name: "Sukarna Hazra",

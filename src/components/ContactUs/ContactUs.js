@@ -3,6 +3,7 @@ import * as emailjs from "emailjs-com";
 import "./ContactUs.css";
 import logo from "../../assets/favicon.png";
 import { useState } from "react";
+import MapContainer from "../MapContainer/MapContainer";
 
 const ContactUs = () => {
   const [name, setName] = useState("");
@@ -87,6 +88,7 @@ const ContactUs = () => {
               <i id="email" className="fas fa-envelope fa-md"></i>{" "}
               organizationsahyog@gmail.com
             </div>
+            <MapContainer />
           </div>
           <div className="col-md-6 contactUsForm">
             <label id="formLabel">Keep in touch</label>

@@ -57,7 +57,6 @@
 }
 
 .col-md-9.testimonial {
-  margin-top: 1.5rem;
   font-size: 24px;
   color: black;
   font-weight: 400;
@@ -155,6 +154,7 @@
 
   .col-md-9.testimonial {
     font-size: 16px;
+    margin-top: 1rem;
     color: black;
     font-weight: 400;
     font-style: oblique;
@@ -217,6 +217,7 @@
   .col-md-9.testimonial {
     font-size: 14px;
     color: black;
+    margin-top: 1rem;
     font-weight: 400;
     font-style: oblique;
   }

@@ -4,6 +4,7 @@ import CoronaWarrior3 from "../assets/campaigns/Corona Warrior/CoronaWarrior-3.j
 import Amphan1 from "../assets/campaigns/Amphan Relief Camp collaboration with Swarnotori NGO/Amphan-1.jpg";
 import Amphan2 from "../assets/campaigns/Amphan Relief Camp collaboration with Swarnotori NGO/Amphan-2.jpg";
 import Amphan3 from "../assets/campaigns/Amphan Relief Camp collaboration with Swarnotori NGO/Amphan-3.jpg";
+import Amphan4 from "../assets/campaigns/Amphan Relief Camp collaboration with Swarnotori NGO/Amphan-4.jpg";
 import Covid19FoodDistribution1 from "../assets/campaigns/COVID 19 Food Distribution/Covid19FoodDistribution-1.jpg";
 import Covid19FoodDistribution2 from "../assets/campaigns/COVID 19 Food Distribution/Covid19FoodDistribution-2.jpg";
 import Covid19FoodDistribution3 from "../assets/campaigns/COVID 19 Food Distribution/Covid19FoodDistribution-3.jpg";
@@ -88,7 +89,7 @@ import WinterClothesDistribution5 from "../assets/campaigns/Winter Clothes Distr
 import WinterClothesDistribution6 from "../assets/campaigns/Winter Clothes Distribution/WinterClothesDistribution-6.jpg";
 
 const coronaWarrior = [CoronaWarrior1, CoronaWarrior2, CoronaWarrior3];
-const amphan = [Amphan1, Amphan2, Amphan3];
+const amphan = [Amphan1, Amphan2, Amphan3, Amphan4];
 const covid19FoodDistribution = [
   Covid19FoodDistribution1,
   Covid19FoodDistribution2,
@@ -186,5 +187,5 @@ export {
   independanceDay,
   newClothesDistribution,
   tribute,
-  winterClothesDistribution
+  winterClothesDistribution,
 };

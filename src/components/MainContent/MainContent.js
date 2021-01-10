@@ -44,7 +44,7 @@ const MainContent = () => {
           </div>
         </div>
         <div className="col-md-8">
-          <Carousel>
+          <Carousel interval={2500}>
             <Carousel.Item>
               <img
                 className="d-block w-100 carousel-image"
