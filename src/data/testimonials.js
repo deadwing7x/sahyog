@@ -105,7 +105,9 @@ const testimonials = [
     Name: "Sukarna Hazra",
     DisplayPicture: "TeamMembers/SukarnaHazra.jpg",
     Position: "Advisory Committee",
-    Testimonial: "",
+    Testimonial: `It gives me immense pleasure to share my thoughts and able to execute those with the help of my fellow friends, 
+      brothers and sisters of Sahyog.We here in Sahyog work with full freedom and dedication to deliver some good work to the 
+      society.I hope that with young minds with lots of talent Sahyog will grow from strength to strength.....🤘`,
   },
   {
     Name: "Debanjan Dasgupta",
