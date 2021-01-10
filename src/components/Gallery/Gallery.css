@@ -23,6 +23,10 @@
   border: none;
 }
 
+.individual-campaign:hover {
+  transform: scale(1.2);
+}
+
 #gallery {
   text-align: center;
 }

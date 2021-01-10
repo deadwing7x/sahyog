@@ -19,6 +19,10 @@
   padding-bottom: 1rem;
 }
 
+.individual-campaign:hover {
+  transform: scale(1.2);
+}
+
 #campaignGallery {
   text-align: center;
 }
