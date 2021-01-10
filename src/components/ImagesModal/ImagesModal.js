@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Modal, Carousel, Image } from "react-bootstrap";
 import "./ImagesModal.css";
 
+// TODO - Fix issue where carousel starts from first even on clicking the next image.
 const PicturesCarousel = (props) => {
   const [mounted, setMounted] = useState(false);
   const [index, setIndex] = useState(0);
