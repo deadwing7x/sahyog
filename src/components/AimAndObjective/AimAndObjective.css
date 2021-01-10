@@ -14,6 +14,8 @@
   border-radius: 25px;
   padding-left: 1rem;
   padding-right: 1rem;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 1px 0 black;
 }
 
 .aim-text {
@@ -33,6 +35,8 @@
   font-size: 36px;
   font-weight: 700;
   font-family: sans-serif;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 1px 0 black;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -56,6 +60,7 @@
   .objective-list {
     margin-top: 2rem;
     padding-right: 1rem;
+    margin-bottom: 1rem;
   }
 
   .objective {
@@ -66,11 +71,10 @@
 
 @media screen and (min-width: 320px) and (max-width: 400px) {
   .aim {
-    background-image: none;
     color: white;
+    background-image: url("../../assets/aim-background2.jpeg");
     padding-top: 1rem;
     padding-bottom: 0 !important;
-    border: 3px solid orange;
   }
 
   .aim-text {
@@ -78,27 +82,33 @@
     padding-left: 1rem;
     margin-top: 1rem;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .objective-list {
     margin-top: 2rem;
     padding-right: 0.5rem;
+    padding-bottom: 1rem;
   }
 
   .objective {
     font-size: 16px;
     font-family: sans-serif;
   }
+
+  .objective {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: sans-serif;
+  }
 }
 
 @media screen and (min-width: 400px) and (max-width: 450px) {
   .aim {
-    background-image: none;
+    background-image: url("../../assets/aim-background2.jpeg");
     color: white;
     padding-top: 2rem;
     padding-bottom: 0 !important;
-    border: 3px solid orange;
   }
 
   .aim-text {
@@ -106,17 +116,18 @@
     padding-left: 1rem;
     margin-top: 1rem;
     font-weight: 700;
-    font-size: 38px;
+    font-size: 40px;
   }
 
   .objective-list {
     margin-top: 2rem;
     padding-right: 1rem;
+    padding-bottom: 1rem;
   }
 
   .objective {
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 22px;
+    font-weight: 700;
     font-family: sans-serif;
   }
 }
