@@ -25,6 +25,10 @@
   cursor: pointer;
 }
 
+.media-images:hover {
+  transform: scale(1.1);
+}
+
 .recognition {
   margin-top: 1rem;
   font-size: 50px;
