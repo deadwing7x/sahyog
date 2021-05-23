@@ -81,14 +81,6 @@ const testimonials = [
     Testimonial: "",
   },
   {
-    Name: "Ajitabha Maji",
-    DisplayPicture: "TeamMembers/AjitabhaMaji.jpg",
-    Position: "Advisory Committee",
-    Testimonial: `It gives me immense pleasure to share my thoughts about Sahyog. The idea to have a realistic NGO strike to 
-      me when I came across with underprivileged children and people who were deprived of basic needs like education, health care 
-      and nutrition. In short duration Sahyog has done tremendous work for upliftment of underprivileged children and societies.`,
-  },
-  {
     Name: "Snehasis Chatterjee",
     DisplayPicture: "TeamMembers/SnehasisChatterjee.jpg",
     Position: "Advisory Committee",
